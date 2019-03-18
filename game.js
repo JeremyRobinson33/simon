@@ -7,15 +7,9 @@ var level = 0;
 var randomChosenColor;
 var gameStart = false;
 
-$(document).on("touchstart",function () {
-  if(!gameStart) {
-    setH1();
-    nextSequence();
-    gameStart = true;
- }
-});
 
-$(document).keypress(function() {
+
+$(document).on("touchstart  click keypress",function () {
   if(!gameStart) {
     setH1();
     nextSequence();
