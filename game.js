@@ -7,13 +7,13 @@ var level = 0;
 var randomChosenColor;
 var gameStart = false;
 
-$(document).click(function () {
+$(document).on("click",function () {
   if(!gameStart) {
     setH1();
     nextSequence();
     gameStart = true;
  }
-})
+});
 
 $(document).keypress(function() {
   if(!gameStart) {
