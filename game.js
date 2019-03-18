@@ -7,7 +7,7 @@ var level = 0;
 var randomChosenColor;
 var gameStart = false;
 
-$(document).on("click",function () {
+$(document).on("click mousedown",function () {
   if(!gameStart) {
     setH1();
     nextSequence();
